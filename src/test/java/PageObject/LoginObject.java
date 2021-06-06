@@ -1,11 +1,14 @@
 package PageObject;
 
+import DataProvider.ConfigFileReader;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.concurrent.TimeUnit;
 
 public class LoginObject {
     WebDriver driver;
@@ -23,7 +26,7 @@ public class LoginObject {
             this.driver = driver;
             PageFactory.initElements(driver, this);
         }
-        public LoginObject SignIn(){
+    public LoginObject SignIn(){
             if (signIn.isDisplayed() && signIn.isEnabled()) {
                 signIn.click();
             }else {
@@ -46,6 +49,12 @@ public class LoginObject {
         }
         public LoginObject clickSignIn(){
             submitButton.click();
+            return this;
+        }
+        public LoginObject goToUrl(){
+            ConfigFileReader configFileReader = new ConfigFileReader();
+            driver.get(configFileReader.getApplicationUrl());
+            driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
             return this;
         }
 

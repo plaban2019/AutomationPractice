@@ -1,9 +1,7 @@
-@UpdateProfile
 Feature: Update Profile
   As a Logged User of the Site
   I want to be able to update my name
-
-
+  @UpdateProfile
   Scenario: Update First Name
     Given I Launch the browser
     When I Click Sign in the site

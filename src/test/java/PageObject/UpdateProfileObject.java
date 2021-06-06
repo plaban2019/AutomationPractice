@@ -59,15 +59,16 @@ public class UpdateProfileObject {
     }
     public UpdateProfileObject updateFirstName() throws InterruptedException {
         String fName = firstName.getText();
-        if (fName.equals("Plaban")){
-            firstName.click();
+        System.out.println(fName);
+        if (fName.contains("Plaban")){
+            //firstName.click();
             Thread.sleep(1000);
             firstName.clear();
             Thread.sleep(1000);
             firstName.sendKeys("Plabank");
             Thread.sleep(3000);
         }else {
-            firstName.click();
+            //firstName.click();
             Thread.sleep(1000);
             firstName.clear();
             Thread.sleep(1000);

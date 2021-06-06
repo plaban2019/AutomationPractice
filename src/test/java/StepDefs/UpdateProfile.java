@@ -2,7 +2,6 @@ package StepDefs;
 
 import DataProvider.ConfigFileReader;
 import PageObject.LoginObject;
-import PageObject.PlaceOrderObject;
 import PageObject.UpdateProfileObject;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -16,18 +15,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.io.BufferedReader;
 import java.util.concurrent.TimeUnit;
 
-public class UpdateProfile {
+public class UpdateProfile{
+    WebDriver driver;
     ConfigFileReader configFileReader;
     UpdateProfileObject updateProfileObject;
-    WebDriver driver;
     LoginObject loginObject;
     BufferedReader reader;
+    PlaceOrder placeOrder;
+    @Before("@UpdateProfile")
+    public void setUp(){
+        configFileReader= new ConfigFileReader();
+        System.setProperty("webdriver.chrome.driver", configFileReader.getDriverPath());
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+    }
     @Given("I Launch the browser")
     public void launchBrowser() throws Throwable {
         configFileReader= new ConfigFileReader();
-        Thread.sleep(3000);
         driver.get(configFileReader.getApplicationUrl());
+        Thread.sleep(3000);
         driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
+        //configFileReader.getApplicationUrl();
 
     }
     @When("I Click Sign in the site")
@@ -83,5 +91,10 @@ public class UpdateProfile {
         updateProfileObject.clickSubmitButton();
         Thread.sleep(3000);
     }
+    @After
+    public void tearDown(){
 
+        driver.close();
+        driver.quit();
+    }
 }

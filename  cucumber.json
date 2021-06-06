@@ -3,430 +3,26 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-06T11:54:46.314Z",
+        "start_timestamp": "2021-06-06T16:13:54.453Z",
         "before": [
           {
             "result": {
-              "duration": 5764000000,
+              "duration": 5132000000,
               "status": "passed"
             },
             "match": {
-              "location": "StepDefs.PlaceOrder.setUp()"
+              "location": "StepDefs.UpdateProfile.setUp()"
             }
           }
         ],
         "line": 5,
-        "name": "Place a T-Shirt Order in automationpractice.com",
-        "description": "",
-        "id": "place-a-t-shirt-order-in-automationpractice.com;place-a-t-shirt-order-in-automationpractice.com",
-        "after": [
-          {
-            "result": {
-              "duration": 365000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefs.PlaceOrder.tearDown()"
-            }
-          },
-          {
-            "result": {
-              "error_message": "java.lang.NullPointerException\n\tat StepDefs.UpdateProfile.tearDown(UpdateProfile.java:91)\n",
-              "duration": 5000000,
-              "status": "failed"
-            },
-            "match": {
-              "location": "StepDefs.UpdateProfile.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 12851000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Launch the browser",
-            "match": {
-              "location": "StepDefs.PlaceOrder.launchBrowser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 10001000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Click Sign in the site",
-            "match": {
-              "location": "StepDefs.PlaceOrder.clickSignIn()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3233000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Enter EmailId in the Email address text box.",
-            "match": {
-              "location": "StepDefs.PlaceOrder.enterEmailId()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3104000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Enter Password in the Password text box.",
-            "match": {
-              "location": "StepDefs.PlaceOrder.enterPassword()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7467000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Click Sign in Button",
-            "match": {
-              "location": "StepDefs.PlaceOrder.clickSubmit()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9884000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Click the T-shirt link",
-            "match": {
-              "location": "StepDefs.PlaceOrder.selectTShirt()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3529000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I scroll Down to Bottom",
-            "match": {
-              "location": "StepDefs.PlaceOrder.scrollDown()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8337000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I hover on the T-shirt Card View",
-            "match": {
-              "location": "StepDefs.PlaceOrder.hoverOnCart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6135000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I click Add To Cart",
-            "match": {
-              "location": "StepDefs.PlaceOrder.addToCart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 12234000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I click   Proceed To  checkout",
-            "match": {
-              "location": "StepDefs.PlaceOrder.proceedCheckoutBtn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4601000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I scroll down to total price",
-            "match": {
-              "location": "StepDefs.PlaceOrder.scrollToPrice()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1535000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I scroll Down to Proceed To first Checkout",
-            "match": {
-              "location": "StepDefs.PlaceOrder.scrollDownToCheckOut()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5610000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I click Proceed To first Checkout",
-            "match": {
-              "location": "StepDefs.PlaceOrder.proceedCheckoutBtn1()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1533000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I scroll Down to Proceed To second Checkout",
-            "match": {
-              "location": "StepDefs.PlaceOrder.scrollDownToCheckOut1()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5191000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I click Proceed To second Checkout",
-            "match": {
-              "location": "StepDefs.PlaceOrder.proceedCheckoutBtn2()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5027000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I scroll Down to CheckBox",
-            "match": {
-              "location": "StepDefs.PlaceOrder.scrollToCheckBox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2153000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "I select Checkbox",
-            "match": {
-              "location": "StepDefs.PlaceOrder.selectCheckBox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5218000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "I click Proceed To third Checkout",
-            "match": {
-              "location": "StepDefs.PlaceOrder.proceedCheckoutBtn3()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3524000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "I scroll Down to Pay By Bank Ware",
-            "match": {
-              "location": "StepDefs.PlaceOrder.scrollDownToPayByBank()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7049000000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "I click on Pay By Bank Ware",
-            "match": {
-              "location": "StepDefs.PlaceOrder.clickPayByBank()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3525000000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "I scroll Down to Confirm Order button",
-            "match": {
-              "location": "StepDefs.PlaceOrder.scrollDownToConfirmOrder()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6245000000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "I click on confirm button",
-            "match": {
-              "location": "StepDefs.PlaceOrder.clickConfirmButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6918000000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "I click on Account Link",
-            "match": {
-              "location": "StepDefs.PlaceOrder.clickAccountLink()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2523000000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "I scroll Down To My Order Page",
-            "match": {
-              "location": "StepDefs.PlaceOrder.scrollToOrderPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10249000000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "I click on My order Page",
-            "match": {
-              "location": "StepDefs.PlaceOrder.clickOnMyOrder()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7094000000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "I click on My order Details",
-            "match": {
-              "location": "StepDefs.PlaceOrder.clickOnMyOrderDetails()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6027000000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "I scroll Down to Order Total row",
-            "match": {
-              "location": "StepDefs.PlaceOrder.scrollToOrderTotal()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3048000000,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I get the Order total and Match.",
-            "match": {
-              "location": "StepDefs.PlaceOrder.OrderTotalMatch()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@PlaceOrder"
-          }
-        ]
-      }
-    ],
-    "name": "Place a T-Shirt Order in automationpractice.com",
-    "description": "",
-    "id": "place-a-t-shirt-order-in-automationpractice.com",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/PlaceOrder.feature",
-    "tags": []
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2021-06-06T11:57:36.592Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2019000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefs.PlaceOrder.setUp()"
-            }
-          }
-        ],
-        "line": 7,
         "name": "Update First Name",
         "description": "",
         "id": "update-profile;update-first-name",
         "after": [
           {
             "result": {
-              "duration": 224000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefs.PlaceOrder.tearDown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 350000000,
+              "duration": 598000000,
               "status": "passed"
             },
             "match": {
@@ -439,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 16203000000,
+              "duration": 25975000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 6,
             "name": "I Launch the browser",
             "match": {
               "location": "StepDefs.UpdateProfile.launchBrowser()"
@@ -451,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 11797000000,
+              "duration": 10955000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 7,
             "name": "I Click Sign in the site",
             "match": {
               "location": "StepDefs.UpdateProfile.clickSignIn()"
@@ -463,10 +59,10 @@
           },
           {
             "result": {
-              "duration": 3243000000,
+              "duration": 3256000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 8,
             "name": "I Enter EmailId in the Email address text box.",
             "match": {
               "location": "StepDefs.UpdateProfile.enterEmailId()"
@@ -475,10 +71,10 @@
           },
           {
             "result": {
-              "duration": 3097000000,
+              "duration": 3128000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 9,
             "name": "I Enter Password in the Password text box.",
             "match": {
               "location": "StepDefs.UpdateProfile.enterPassword()"
@@ -487,10 +83,10 @@
           },
           {
             "result": {
-              "duration": 5757000000,
+              "duration": 8204000000,
               "status": "passed"
             },
-            "line": 12,
+            "line": 10,
             "name": "I Click Sign in Button",
             "match": {
               "location": "StepDefs.UpdateProfile.clickSubmit()"
@@ -499,10 +95,10 @@
           },
           {
             "result": {
-              "duration": 8253000000,
+              "duration": 8209000000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 11,
             "name": "I click on My Account Link",
             "match": {
               "location": "StepDefs.UpdateProfile.clickOnMyAccount()"
@@ -511,10 +107,10 @@
           },
           {
             "result": {
-              "duration": 3524000000,
+              "duration": 3525000000,
               "status": "passed"
             },
-            "line": 14,
+            "line": 12,
             "name": "I scroll Down to My Personal info",
             "match": {
               "location": "StepDefs.UpdateProfile.scrollToMyPersonalInfo()"
@@ -523,10 +119,10 @@
           },
           {
             "result": {
-              "duration": 8386000000,
+              "duration": 9793000000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 13,
             "name": "I click on My Personal Info",
             "match": {
               "location": "StepDefs.UpdateProfile.clickOnMyPersonalInfo()"
@@ -535,10 +131,10 @@
           },
           {
             "result": {
-              "duration": 3522000000,
+              "duration": 3528000000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 14,
             "name": "I scroll Down to Email field",
             "match": {
               "location": "StepDefs.UpdateProfile.scrollToEmailField()"
@@ -547,10 +143,10 @@
           },
           {
             "result": {
-              "duration": 16101000000,
+              "duration": 18122000000,
               "status": "passed"
             },
-            "line": 17,
+            "line": 15,
             "name": "I Update the first Name",
             "match": {
               "location": "StepDefs.UpdateProfile.updateFirstName()"
@@ -570,15 +166,6 @@
     "id": "update-profile",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/UpdateProfile.feature",
-    "tags": [
-      {
-        "name": "@UpdateProfile",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "tags": []
   }
 ]

@@ -22,7 +22,7 @@ public class PlaceOrder {
     WebDriver driver;
     LoginObject loginObject;
     BufferedReader reader;
-    @Before
+    @Before("@PlaceOrder")
     public void setUp(){
         configFileReader= new ConfigFileReader();
         System.setProperty("webdriver.chrome.driver", configFileReader.getDriverPath());
@@ -205,11 +205,6 @@ public class PlaceOrder {
         }
 
         Thread.sleep(1000);
-    }
-    @After
-    public void tearDown(){
-        driver.close();
-        driver.quit();
     }
 
 }
