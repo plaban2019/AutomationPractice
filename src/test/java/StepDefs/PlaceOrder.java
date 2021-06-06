@@ -5,7 +5,6 @@ import PageObject.LoginObject;
 import PageObject.PlaceOrderObject;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -17,7 +16,7 @@ import java.io.*;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-public class PlaceOrder extends Login {
+public class PlaceOrder {
     ConfigFileReader configFileReader;
     PlaceOrderObject placeOrderObject;
     WebDriver driver;
@@ -195,7 +194,7 @@ public class PlaceOrder extends Login {
         placeOrderObject.scrollToOrderTotal();
         Thread.sleep(3000);
     }
-    @And("I get the Order total and Match.")
+    @Then("I get the Order total and Match.")
     public void OrderTotalMatch() throws InterruptedException, FileNotFoundException {
         String totalPrice = placeOrderObject.orderPrice();
         reader = new BufferedReader(new FileReader("src/main/resources/Id.properties"));

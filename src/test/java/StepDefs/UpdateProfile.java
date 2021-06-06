@@ -4,9 +4,11 @@ import DataProvider.ConfigFileReader;
 import PageObject.LoginObject;
 import PageObject.PlaceOrderObject;
 import PageObject.UpdateProfileObject;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,16 +22,9 @@ public class UpdateProfile {
     WebDriver driver;
     LoginObject loginObject;
     BufferedReader reader;
-    @Before
-    public void setUp(){
-        configFileReader= new ConfigFileReader();
-        System.setProperty("webdriver.chrome.driver", configFileReader.getDriverPath());
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
     @Given("I Launch the browser")
     public void launchBrowser() throws Throwable {
-        //configFileReader= new ConfigFileReader();
+        configFileReader= new ConfigFileReader();
         Thread.sleep(3000);
         driver.get(configFileReader.getApplicationUrl());
         driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
@@ -79,11 +74,14 @@ public class UpdateProfile {
         updateProfileObject.scrollToEmail();
         Thread.sleep(3000);
     }
-    @And("I Update the first Name")
+    @Then("I Update the first Name")
     public void updateFirstName() throws InterruptedException {
         updateProfileObject.updateFirstName();
+        updateProfileObject.updateOldPassWord();
+        updateProfileObject.updateCurrentPassWord();
+        updateProfileObject.updateConfirmationPassWord();
+        updateProfileObject.clickSubmitButton();
         Thread.sleep(3000);
     }
-
 
 }

@@ -14,7 +14,7 @@ Feature: Update Profile
     And I scroll Down to My Personal info
     And I click on My Personal Info
     And I scroll Down to Email field
-    And I Update the first Name
+    Then I Update the first Name
 #    Examples:
 #      |  name   |
 #      | Plaban1 |

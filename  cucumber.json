@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-06T09:00:56.211Z",
+        "start_timestamp": "2021-06-06T11:54:46.314Z",
         "before": [
           {
             "result": {
-              "duration": 7163000000,
+              "duration": 5764000000,
               "status": "passed"
             },
             "match": {
@@ -16,17 +16,27 @@
           }
         ],
         "line": 5,
-        "name": "Login to http://automationpractice.com",
+        "name": "Place a T-Shirt Order in automationpractice.com",
         "description": "",
-        "id": "place-a-t-shirt-order-in-automationpractice.com;login-to-http://automationpractice.com",
+        "id": "place-a-t-shirt-order-in-automationpractice.com;place-a-t-shirt-order-in-automationpractice.com",
         "after": [
           {
             "result": {
-              "duration": 373000000,
+              "duration": 365000000,
               "status": "passed"
             },
             "match": {
               "location": "StepDefs.PlaceOrder.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat StepDefs.UpdateProfile.tearDown(UpdateProfile.java:91)\n",
+              "duration": 5000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "StepDefs.UpdateProfile.tearDown()"
             }
           }
         ],
@@ -35,7 +45,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12281000000,
+              "duration": 12851000000,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +57,7 @@
           },
           {
             "result": {
-              "duration": 9500000000,
+              "duration": 10001000000,
               "status": "passed"
             },
             "line": 7,
@@ -59,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 3244000000,
+              "duration": 3233000000,
               "status": "passed"
             },
             "line": 8,
@@ -71,7 +81,7 @@
           },
           {
             "result": {
-              "duration": 3121000000,
+              "duration": 3104000000,
               "status": "passed"
             },
             "line": 9,
@@ -83,7 +93,7 @@
           },
           {
             "result": {
-              "duration": 6540000000,
+              "duration": 7467000000,
               "status": "passed"
             },
             "line": 10,
@@ -95,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 11665000000,
+              "duration": 9884000000,
               "status": "passed"
             },
             "line": 11,
@@ -107,7 +117,7 @@
           },
           {
             "result": {
-              "duration": 3541000000,
+              "duration": 3529000000,
               "status": "passed"
             },
             "line": 12,
@@ -119,7 +129,7 @@
           },
           {
             "result": {
-              "duration": 3147000000,
+              "duration": 8337000000,
               "status": "passed"
             },
             "line": 13,
@@ -131,7 +141,7 @@
           },
           {
             "result": {
-              "duration": 6178000000,
+              "duration": 6135000000,
               "status": "passed"
             },
             "line": 14,
@@ -143,7 +153,7 @@
           },
           {
             "result": {
-              "duration": 8438000000,
+              "duration": 12234000000,
               "status": "passed"
             },
             "line": 15,
@@ -155,7 +165,7 @@
           },
           {
             "result": {
-              "duration": 4594000000,
+              "duration": 4601000000,
               "status": "passed"
             },
             "line": 16,
@@ -167,7 +177,7 @@
           },
           {
             "result": {
-              "duration": 1532000000,
+              "duration": 1535000000,
               "status": "passed"
             },
             "line": 17,
@@ -179,7 +189,7 @@
           },
           {
             "result": {
-              "duration": 4483000000,
+              "duration": 5610000000,
               "status": "passed"
             },
             "line": 18,
@@ -191,7 +201,7 @@
           },
           {
             "result": {
-              "duration": 1531000000,
+              "duration": 1533000000,
               "status": "passed"
             },
             "line": 19,
@@ -203,7 +213,7 @@
           },
           {
             "result": {
-              "duration": 5136000000,
+              "duration": 5191000000,
               "status": "passed"
             },
             "line": 20,
@@ -215,7 +225,7 @@
           },
           {
             "result": {
-              "duration": 5023000000,
+              "duration": 5027000000,
               "status": "passed"
             },
             "line": 21,
@@ -227,7 +237,7 @@
           },
           {
             "result": {
-              "duration": 2154000000,
+              "duration": 2153000000,
               "status": "passed"
             },
             "line": 22,
@@ -239,7 +249,7 @@
           },
           {
             "result": {
-              "duration": 4448000000,
+              "duration": 5218000000,
               "status": "passed"
             },
             "line": 23,
@@ -251,7 +261,7 @@
           },
           {
             "result": {
-              "duration": 3527000000,
+              "duration": 3524000000,
               "status": "passed"
             },
             "line": 24,
@@ -263,7 +273,7 @@
           },
           {
             "result": {
-              "duration": 6057000000,
+              "duration": 7049000000,
               "status": "passed"
             },
             "line": 25,
@@ -275,7 +285,7 @@
           },
           {
             "result": {
-              "duration": 3530000000,
+              "duration": 3525000000,
               "status": "passed"
             },
             "line": 26,
@@ -287,7 +297,7 @@
           },
           {
             "result": {
-              "duration": 8506000000,
+              "duration": 6245000000,
               "status": "passed"
             },
             "line": 27,
@@ -299,7 +309,7 @@
           },
           {
             "result": {
-              "duration": 6514000000,
+              "duration": 6918000000,
               "status": "passed"
             },
             "line": 28,
@@ -311,7 +321,7 @@
           },
           {
             "result": {
-              "duration": 2531000000,
+              "duration": 2523000000,
               "status": "passed"
             },
             "line": 29,
@@ -323,7 +333,7 @@
           },
           {
             "result": {
-              "duration": 9998000000,
+              "duration": 10249000000,
               "status": "passed"
             },
             "line": 30,
@@ -335,7 +345,7 @@
           },
           {
             "result": {
-              "duration": 7102000000,
+              "duration": 7094000000,
               "status": "passed"
             },
             "line": 31,
@@ -347,7 +357,7 @@
           },
           {
             "result": {
-              "duration": 6024000000,
+              "duration": 6027000000,
               "status": "passed"
             },
             "line": 32,
@@ -359,7 +369,7 @@
           },
           {
             "result": {
-              "duration": 3052000000,
+              "duration": 3048000000,
               "status": "passed"
             },
             "line": 33,
@@ -367,7 +377,7 @@
             "match": {
               "location": "StepDefs.PlaceOrder.OrderTotalMatch()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -383,5 +393,192 @@
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/PlaceOrder.feature",
     "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-06T11:57:36.592Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2019000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.PlaceOrder.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Update First Name",
+        "description": "",
+        "id": "update-profile;update-first-name",
+        "after": [
+          {
+            "result": {
+              "duration": 224000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.PlaceOrder.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 350000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.UpdateProfile.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16203000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I Launch the browser",
+            "match": {
+              "location": "StepDefs.UpdateProfile.launchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11797000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I Click Sign in the site",
+            "match": {
+              "location": "StepDefs.UpdateProfile.clickSignIn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3243000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I Enter EmailId in the Email address text box.",
+            "match": {
+              "location": "StepDefs.UpdateProfile.enterEmailId()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3097000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Enter Password in the Password text box.",
+            "match": {
+              "location": "StepDefs.UpdateProfile.enterPassword()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5757000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I Click Sign in Button",
+            "match": {
+              "location": "StepDefs.UpdateProfile.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8253000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on My Account Link",
+            "match": {
+              "location": "StepDefs.UpdateProfile.clickOnMyAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3524000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I scroll Down to My Personal info",
+            "match": {
+              "location": "StepDefs.UpdateProfile.scrollToMyPersonalInfo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8386000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on My Personal Info",
+            "match": {
+              "location": "StepDefs.UpdateProfile.clickOnMyPersonalInfo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3522000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I scroll Down to Email field",
+            "match": {
+              "location": "StepDefs.UpdateProfile.scrollToEmailField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16101000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I Update the first Name",
+            "match": {
+              "location": "StepDefs.UpdateProfile.updateFirstName()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UpdateProfile"
+          }
+        ]
+      }
+    ],
+    "name": "Update Profile",
+    "description": "  As a Logged User of the Site\n  I want to be able to update my name",
+    "id": "update-profile",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UpdateProfile.feature",
+    "tags": [
+      {
+        "name": "@UpdateProfile",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

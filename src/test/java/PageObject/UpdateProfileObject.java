@@ -17,6 +17,14 @@ public class UpdateProfileObject {
     private WebElement scrollToEmail;
     @FindBy(how = How.ID, using = "firstname")
     private WebElement firstName;
+    @FindBy(how = How.ID, using = "old_passwd")
+    private WebElement oldPassWord;
+    @FindBy(how = How.ID, using = "passwd")
+    private WebElement currentPassWord;
+    @FindBy(how = How.ID, using = "confirmation")
+    private WebElement confirmationPassWord;
+    @FindBy(how = How.XPATH, using = "//button[@name='submitIdentity']")
+    private WebElement submitButton;
     public UpdateProfileObject(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -50,18 +58,44 @@ public class UpdateProfileObject {
         return this;
     }
     public UpdateProfileObject updateFirstName() throws InterruptedException {
-        if (firstName.getText().equals("Plaban")){
+        String fName = firstName.getText();
+        if (fName.equals("Plaban")){
+            firstName.click();
+            Thread.sleep(1000);
             firstName.clear();
-            firstName.sendKeys("Plaban1");
+            Thread.sleep(1000);
+            firstName.sendKeys("Plabank");
             Thread.sleep(3000);
         }else {
+            firstName.click();
+            Thread.sleep(1000);
             firstName.clear();
+            Thread.sleep(1000);
             firstName.sendKeys("Plaban");
             System.out.println("First Name is not editable");
         }
         return this;
     }
+    public void updateOldPassWord() throws InterruptedException {
+        oldPassWord.clear();
+        oldPassWord.sendKeys("Plaban123");
+        Thread.sleep(2000);
+    }
+    public void updateCurrentPassWord() throws InterruptedException {
+        currentPassWord.clear();
+        currentPassWord.sendKeys("Plaban123");
+        Thread.sleep(2000);
+    }
+    public void updateConfirmationPassWord() throws InterruptedException {
+        confirmationPassWord.clear();
+        confirmationPassWord.sendKeys("Plaban123");
+        Thread.sleep(2000);
+    }
+    public void clickSubmitButton() throws InterruptedException {
+        submitButton.click();
+        Thread.sleep(2000);
 
+    }
 
 
 }

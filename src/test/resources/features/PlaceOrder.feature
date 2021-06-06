@@ -30,6 +30,6 @@ Feature: Place a T-Shirt Order in automationpractice.com
     And I click on My order Page
     And I click on My order Details
     And I scroll Down to Order Total row
-    And I get the Order total and Match.
+    Then I get the Order total and Match.
 
 
